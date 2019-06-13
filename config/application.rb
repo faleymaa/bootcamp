@@ -21,5 +21,8 @@ module Splurty
 
     # Precompile additional assets
     config.assets.precompile += %w( .woff2 .woff .ttf)
+
+    # config/application.rb
+    config.assets.initialize_on_precompile = false
   end
 end
