@@ -9,7 +9,6 @@ Bundler.require(*Rails.groups)
 module Splurty
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 5.2
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
@@ -20,9 +19,6 @@ module Splurty
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
 
     # Precompile additional assets
-    config.assets.precompile += %w( .woff2 .woff .ttf)
-
-    # config/application.rb
-    config.assets.initialize_on_precompile = false
+    config.assets.precompile += %w( .woff2 .woff )
   end
 end
