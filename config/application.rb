@@ -15,7 +15,7 @@ module Splurty
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
-    config.assets.enable = true
+    # config.assets.enable = true
     # Add the font path
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
 
